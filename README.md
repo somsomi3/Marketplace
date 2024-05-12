@@ -9,7 +9,7 @@
 ERD
 ---
 
- ![이미지 이름](https://github.com/somsomi3/Marketplace/blob/main/MarketplaceERD.png)
+ ![이미지 이름](https://github.com/somsomi3/Marketplace/blob/main/marketplaceERD(수정).png)
 
 
 
