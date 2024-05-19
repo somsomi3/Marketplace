@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae8e4bb9-f026-4d5a-bf9d-59c3803226ca" name="변경" comment=".gitignore적용">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="ae8e4bb9-f026-4d5a-bf9d-59c3803226ca" name="변경" comment=".gitignore적용2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +107,7 @@
       <workItem from="1716103755536" duration="433000" />
       <workItem from="1716104210688" duration="5337000" />
       <workItem from="1716114019089" duration="341000" />
-      <workItem from="1716114379362" duration="428000" />
+      <workItem from="1716114379362" duration="782000" />
     </task>
     <task id="LOCAL-00001" summary="일부 수정하였습니다.">
       <option name="closed" value="true" />
@@ -135,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716114546565</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".gitignore적용2">
+      <option name="closed" value="true" />
+      <created>1716114846331</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716114846331</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +151,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="일부 수정하였습니다." />
     <MESSAGE value=".gitignore적용" />
-    <option name="LAST_COMMIT_MESSAGE" value=".gitignore적용" />
+    <MESSAGE value=".gitignore적용2" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore적용2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
