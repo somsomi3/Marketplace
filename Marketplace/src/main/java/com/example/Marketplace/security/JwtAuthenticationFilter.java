@@ -51,7 +51,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     private String resolveTokenFromRequest(HttpServletRequest request) {
         String token = request.getHeader(TOKEN_HEADER);
 
-        if(!ObjectUtils.isEmpty(token)&& token.startsWith(TOKEN_PREFIX)){//토큰이 있으면
+        if (!ObjectUtils.isEmpty(token)&& token.startsWith(TOKEN_PREFIX)){//토큰이 있으면
             return token.substring(TOKEN_PREFIX.length());
         }
         return  null;//없을경우에는 null반환

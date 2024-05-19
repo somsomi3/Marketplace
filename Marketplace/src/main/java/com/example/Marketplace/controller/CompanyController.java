@@ -12,6 +12,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.util.ObjectUtils;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,6 +23,7 @@ import java.util.List;
 public class CompanyController {
 
     private final CompanyService companyService;
+    // CompanyService안에 @Service를 안적어줘서, 두번째 companyService에 밑줄이 그였었음.
 
     @GetMapping
     @PreAuthorize("hasRole('READ')")
@@ -30,9 +32,10 @@ public class CompanyController {
         return ResponseEntity.ok(companyEntities);
     }
 
+
     @PostMapping
     @PreAuthorize("hasRole('WRITE')")
-    public ResponseEntity<?> addCompany(@RequestBody Company request) {
+    public ResponseEntity<?> addCompany( @Validated @RequestBody Company request) {
         String ticker = request.getTicker().trim();
         if (ObjectUtils.isEmpty(ticker)) {
             throw new RuntimeException("ticker is empty");

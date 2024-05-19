@@ -26,9 +26,7 @@ public class Review {
     @JoinColumn(name = "store_id")
     private Store store;
 
-    @OneToOne(mappedBy = "review")
-    @JsonBackReference
-    private Reservation reservation;
+
 
     private String content;
     private LocalDateTime createdAt;

@@ -17,8 +17,6 @@ public interface StoreRepository extends JpaRepository<Store, Long> {
 
     Optional<Store> findByName(String name);
 
-    default boolean existsByName(String name) {
-        return findByName(name).isPresent();
-    }
+
 }
 

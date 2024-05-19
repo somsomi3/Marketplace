@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "http://localhost:8080")
 @RequiredArgsConstructor
 @Transactional
-public class memberController {
+public class MemberController {
 
     private final MemberService memberService;
     private final TokenProvider tokenProvider;
