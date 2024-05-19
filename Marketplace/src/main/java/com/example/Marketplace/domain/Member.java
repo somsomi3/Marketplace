@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity(name = "MEMBER")
+
 public class Member {
     @Id @GeneratedValue
     @Column(name = "member_id")

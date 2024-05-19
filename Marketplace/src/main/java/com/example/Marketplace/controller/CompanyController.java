@@ -25,7 +25,7 @@ public class CompanyController {
     private final CompanyService companyService;
     // CompanyService안에 @Service를 안적어줘서, 두번째 companyService에 밑줄이 그였었음.
 
-    @GetMapping
+    @GetMapping("/read/member")
     @PreAuthorize("hasRole('READ')")
     public ResponseEntity<?> searchCompany(final Pageable pageable) {
         Page<Member> companyEntities = this.companyService.getAllCompany(pageable);
@@ -33,7 +33,7 @@ public class CompanyController {
     }
 
 
-    @PostMapping
+    @PostMapping("/write/member")
     @PreAuthorize("hasRole('WRITE')")
     public ResponseEntity<?> addCompany( @Validated @RequestBody Company request) {
         String ticker = request.getTicker().trim();
@@ -47,7 +47,8 @@ public class CompanyController {
         return ResponseEntity.ok(savedCompany);
     }
 
-    @DeleteMapping("/{ticker}")
+    @DeleteMapping("/delete/member")
+            //("/{ticker}")
     @PreAuthorize("hasRole('WRITE')")
     public ResponseEntity<?> deleteCompany(@PathVariable String ticker) {
         String companyName = this.companyService.deleteCompany(ticker);
